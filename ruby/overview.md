@@ -1,4 +1,4 @@
-# Ruby: Basic Terms
+# Ruby: Overview
 Ruby is an object-oriented programming language that was created in 1993 by Yukihiro Matsumoto.
 
 ## Classes

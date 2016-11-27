@@ -1,4 +1,4 @@
-# JavaScript: Basic Terms
+# JavaScript: Overview
 
 ## Asynchronous JavaScript
 Asynchronous means once a request is made, it doesn't wait for the response in order to move to the next step. Instead, it keeps running all tasks at once. Asynchronous JavaScript is often used with AJAX calls. [See also Synchronous JavaScript](#synchronous-javascript).

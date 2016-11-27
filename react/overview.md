@@ -1,4 +1,4 @@
-# React JS: Basic Terms
+# React JS: Overview
 
 ## Components
 Let you split the UI into separate, reusable pieces, and think about each piece in isolation. Components are similar to JavaScript functions.
