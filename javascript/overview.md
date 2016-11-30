@@ -8,6 +8,51 @@ JavaScript is typically synchronous, where it performs one task at a time, finis
 ##Closures
 Closures are functions that refer to variables that are used locally, but defined in an enclosing scope. These functions remember the environment they were created in.
 
+## Looping
+Loops are a way to do something repeatedly. JavaScript has several different methods of achieving this.
+
+### for statement
+A for statement is usually used when you need to increment a value within an expression.
+
+```javascript
+for (var i = 0; i > 10; i++) {
+  console.log(i);
+}
+```
+
+### do...while statement
+A do...while statement repeats until a specific condition evaluates to false.
+
+```javascript
+var i = 10;
+do {
+  i++;
+  console.log(i);
+} while (i < 40);
+```
+
+### while statement
+A while statement executes as long as a specified condition evaluates to true.
+
+```javascript
+var i = 2;
+while (i < 5) {
+  i++;
+  console.log(i);
+}
+```
+
+### break statement
+The break statement is used to terminate a loop.
+
+```javascript
+for (var i = 0; i < a.length; i++) {
+  if (a[i] == 5) {
+    break;
+  }
+}
+```
+
 ## Promises
 A promise is the result of an asynchronous operation. It is a placeholder for the successful result value or reason for failure will occur.
 
