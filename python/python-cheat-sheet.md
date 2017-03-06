@@ -1,18 +1,40 @@
 # Python: Overview
 Python is a high-level programming language created by Guido van Rossum in 1991. Whitespace matters in Python, and Python uses a syntax that allows programmers to use fewer lines of code. Everything in Python is an object (variables, functions, code).
 
+## Bytes and Byte Arrays
+Used for converting strings
+
+## Constructor Method
+Constructor method is defined with `def __init__`
+
+## Decorators
+Decorators are special functions that return other functions and are used to modify the way that a function works - they're often used as accessor functions.
+
 ## Dictionaries
 A dictionary is a set of key value pairs. All keys in a dictionariy must be unique.
 
+A dictionary can be created two different ways:
+
 ```python
   dictionary = { 'a':1, 'b':2, 'c':3, 'd':'phrase'}
+
+  dictionary = dict(a = 1, b = 2, c 3)
 ```
+
+## Generators
+A generator object is an object that can be used in the context of an iterator. It uses the yield keyword, which means the first time the function is called, it will execute all the code, then the next time it's called, it will pick up where the yield is.
 
 ## Immutable and Mutable Objects
 * Mutable objects may change value, immutable objects may not.
 * Most fundamental types in Python are immutable (numbers, strings, tuples)
 * Mutable objects include lists, dictionaries, and other objects depending on how they're implemented
 
+## Lists
+Lists are declared the following way:
+
+```python
+  x = [2,3,4,5]
+```
 ## Operators
 Outside of the usual operators, Python also uses:
 
@@ -29,3 +51,9 @@ Outside of the usual operators, Python also uses:
 
 ## Tuples
 Consist of a number of values separated by commas. They are used for ordered pairs and returning several values form a function.
+
+Tuples are created with the comma operator:
+
+```python
+  newTuple = 2,3,4,5
+```
