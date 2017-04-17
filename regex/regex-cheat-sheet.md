@@ -9,6 +9,10 @@ A regex, or regular expression, is a special text string for describing a search
 * `[^abc]` not a, b, or c
 * `[a-g]` character between a and g
 
+### Examples
+* `(?:\d*\.)?\d+` selects all numbers (and decimal numbers)
+* `[a-zA-Z]+` selects all words in text
+
 ## Anchors
 * `^abc$` start/end of the string
 * `\b \B` word, not-word boundary
@@ -31,3 +35,6 @@ A regex, or regular expression, is a special text string for describing a search
 * `a{1,4}` between one and four
 * `a+? a{3,}?` match as few as possible
 * `ab|cd` match ab or cd
+
+### Examples
+* `\b\d{3}[-.]?\d{3}[-.]?\d{4}\b` selects U.S. phone number
