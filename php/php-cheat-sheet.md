@@ -25,6 +25,11 @@ PHP is an open-source, server-side scripting language.
 * Used when you need a key to retrieve data
 * `echo $newarr[1]` wouldn't work unless assign keys with indexes for an associative array
 
+#### Array pointers
+* `current($array);` current pointer value in array
+* `next($array);` move the pointer forward
+* `prev($array);` move the pointer backward
+
 ### Array Functions
 * `count($newarr);` to tell how many items are in an array
 * `max($newarr);` tells the maximum value in the array
