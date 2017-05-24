@@ -115,6 +115,14 @@ PHP is an open-source, server-side scripting language.
 * You can use letters, numbers, dashes, and underscores, but you can't use spaces.
 * Functions must start with a letter or underscore.
 * Case insensitive
+* Using arrays to return function values, you can use list to assign array values to variables:
+```php
+  list($result1, $result2) = array_func(10, 5)
+  echo "This is result 1: " . $result1 . "<br />";
+  echo "This is result 2: " . $result2 . "<br />";
+```
+* To access global variables in functions, use `global` keyword like with the following: `global $result1;`
+* Should use global keyword with caution, since you might change the value of the global variable
 
 ## Printing
 To print items to the screen, use `echo`
