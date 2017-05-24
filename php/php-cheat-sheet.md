@@ -105,6 +105,17 @@ PHP is an open-source, server-side scripting language.
 * The types we can use are string, int or integer, float, array, bool or boolean
 * `gettype();` best way to figure out the value type
 
+## Functions
+* You define a function with the following syntax:
+```php
+  function name($arg1, $arg2) {
+    statement;
+  }
+```
+* You can use letters, numbers, dashes, and underscores, but you can't use spaces.
+* Functions must start with a letter or underscore.
+* Case insensitive
+
 ## Printing
 To print items to the screen, use `echo`
 
