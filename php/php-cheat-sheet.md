@@ -105,6 +105,18 @@ PHP is an open-source, server-side scripting language.
 * The types we can use are string, int or integer, float, array, bool or boolean
 * `gettype();` best way to figure out the value type
 
+## Debugging
+* Use `<?php phpinfo(); ?>` to access more information about the configurations
+* Missing semicolons are a common problem
+* To turn on error reporting, in the php.ini file, `display_errors = On` and `error_reporting = E_ALL`, in PHP code, `ini_set('display_errors', 'On');` and `error_reporting(E_ALL);`
+* Turn off error reporting on live websites
+* Use `echo` to make sure you're getting the right values for variables
+* `print_r($array);` to print readable array
+* `gettype($variable);` to get variable type
+* `var_dump($variable);` to get type and value
+* `get_defined_vars();` array of defined variables
+* `debug_backtrace();` show backtrace
+
 ## Functions
 * You define a function with the following syntax:
 ```php
