@@ -12,6 +12,24 @@ PHP is an open-source, server-side scripting language.
   ?>
 ```
 
+## Cookies
+* Cookies let us keep track of state for users
+* Cookies go in the headers of responses
+* Uses `$_Cookie` super global
+* `setcookie($name, $value, $expire);`
+* Setting cookies must be done before any HTML output unless output buffering is turned on
+* End users can find what your cookies are called, so don't use sensitive information there unless it's been encrypted
+* To unset a cookie: `setcookie($name, null);` and to tell it to throw away the cookie because it's not useful anymore, use `setcookie($name, $value, (time() - 3600));`
+
+### Sessions
+* A session is a file that's stored on the web server
+* Have more storage and smaller request sizes than cookies
+* Conceal data values
+* They are slower to access than cookies
+* Designed to expire immediately after user closes their browser
+* Session files can accumulate
+* PHP handles finding the session for us
+
 ## Data Types
 
 ### Arrays
