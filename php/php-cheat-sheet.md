@@ -117,6 +117,13 @@ PHP is an open-source, server-side scripting language.
 * `get_defined_vars();` array of defined variables
 * `debug_backtrace();` show backtrace
 
+## Encoding
+* For GET requests to pass a reserved character, you must encode them with `urlencode($string)` - letters, numbers, underscores, and dashes will be unchanged, but reserved characters become % + 2-digit hexidecimal, and spaces become +
+* For rawurlencode, letters, numbers, and dashes are unchanged, reserved characters become % + 2-digit hexidecimal, and spaces become %20
+* Use rawurlencode for the path, before the "?" section, and uses urlencode on the query string
+* <, >, &, and " are reserved characters in HTML
+* HTML can be encoded with htmlspecialchars() and htmlentities()
+
 ## Functions
 * You define a function with the following syntax:
 ```php
@@ -135,6 +142,21 @@ PHP is an open-source, server-side scripting language.
 ```
 * To access global variables in functions, use `global` keyword like with the following: `global $result1;`
 * Should use global keyword with caution, since you might change the value of the global variable
+
+## Including and Requiring Files
+* `include("file_name.php");`
+* Include functions, layout sections (header, footer, etc), reusable HTML/PHP code, CSS and JavaScript
+* `require()` does the same thing as `include()` but generates a fatal error if it can't find the file
+* `include_once()` keeps an array to the paths it's already included. If it has to include it again, it ignores it since it's already been included
+* `require_once()` does the same thing as `include_once()` but for required files
+
+## Output Buffering
+* `ob_start()`
+* `ob_end_flush()`
+
+## Page Redirection
+* `header("Location: login.php");`
+* add `exit` after the redirect so it doesn't send along any content from the current page
 
 ## Printing
 To print items to the screen, use `echo`
