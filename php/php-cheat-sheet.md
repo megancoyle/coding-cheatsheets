@@ -174,6 +174,55 @@ PHP is an open-source, server-side scripting language.
 * `include_once()` keeps an array to the paths it's already included. If it has to include it again, it ignores it since it's already been included
 * `require_once()` does the same thing as `include_once()` but for required files
 
+## MySQL and PHP
+* You can use mysqli and PDO APIs to connect to MySQL with PHP
+* PDO is good to use if you might change to a different database
+* To connect to a database: 1) create a database connection, 2) perform database query, 3) use returned data, 4) release returned data, 5) close database connection
+* Creating a connection with MySQLi:
+```php
+    <?php
+      $dbhost = "localhost";
+      $dbuser = "user_name";
+      $dbpass = "password";
+      $dbname = "database_name";
+      $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+      // Test if connection occurred
+      if(mysqli_connect_errno()) {
+        die("Database connection failed: " .
+        mysqli_connect_error() .
+        " (" . mysqli_connect_errno() . ")"
+      );
+      }
+    ?>
+```
+* To end the connection, at the end of the page, add:
+```php
+  <?php
+    mysqli_close($connection);
+   ?>
+```
+* Queries: `mysqli_query()`, for example:
+```php
+  <?php
+  $query = "SELECT * ROW subjects";
+  $result = mysqli_query($connection, $query);
+  if (!$result) {
+    die("Database query failed.");
+  }
+  ?>
+```
+* Fetch results: `mysqli_fetch_row()` (fastest way to fetch) or for an associative array, `mysqli_fetch_assoc()` (slightly slower query but gives you a key), or `mysqli_fetch_array` returns in either or both types of arrays (by default it will return both, which makes your memory larger)
+```php
+  <?php
+    while($row = mysqli_fetch_row($result)) {
+      // output data from each row
+      var_dump($row);
+    }
+  ?>
+```
+* Free up memory: `mysqli_free_result()`, with `mysqli_free_result($result);`
+
 ## Output Buffering
 * `ob_start()`
 * `ob_end_flush()`
