@@ -124,6 +124,12 @@ PHP is an open-source, server-side scripting language.
 * <, >, &, and " are reserved characters in HTML
 * HTML can be encoded with htmlspecialchars() and htmlentities()
 
+## Forms
+* Single-page form processing has all logic to the form in one file
+* For user-submitted fields, use `htmlspecialchars();` to catch instances when users type in special characters
+* For validations, `preg_match()` is useful because you can use regular expressions to check if they're included in the user's input (i.e. '@' and other symbols)
+* Use `trim()` to deal with removing spaces for validation
+
 ## Functions
 * You define a function with the following syntax:
 ```php
