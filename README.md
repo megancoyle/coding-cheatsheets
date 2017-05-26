@@ -6,6 +6,7 @@ As I continue to explore different programming languages, I'm planning to add ti
 * [Angular 1 JS: Overview](angular-1/angular-1-cheat-sheet.md)
 * [General Programming: Overview](general-programming/general-programming-cheat-sheet.md)
 * [JavaScript: Overview](javascript/javascript-cheat-sheet.md)
+* [MySQL: Overview](mysql/mysql-cheat-sheet.md)
 * [PHP: Overview](php/php-cheat-sheet.md)
 * [Python: Overview](python/python-cheat-sheet.md)
 * [React JS: Overview](react/react-cheat-sheet.md)
