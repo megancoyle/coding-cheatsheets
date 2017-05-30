@@ -222,6 +222,9 @@ PHP is an open-source, server-side scripting language.
   ?>
 ```
 * Free up memory: `mysqli_free_result()`, with `mysqli_free_result($result);`
+* `mysqli_insert_id()` returns the id of the most recently inserted record
+* Escaping strings in SQL to help protect it against SQL injections (add backslash before single-quotes, `addslashes($string)`, `mysquli_real_escape_string($db, $string)`)
+* Prepared statements - separate query from dynamic data, prevents SQL injection
 
 ## Output Buffering
 * `ob_start()`
