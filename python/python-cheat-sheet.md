@@ -4,6 +4,9 @@ Python is a high-level programming language created by Guido van Rossum in 1991.
 ## Bytes and Byte Arrays
 Used for converting strings
 
+## Conditionals
+Uses if, elif, and else  statements
+
 ## Constructor Method
 Constructor method is defined with `def __init__`
 
@@ -35,6 +38,10 @@ Lists are declared the following way:
 ```python
   x = [2,3,4,5]
 ```
+
+## Loops
+Only has two ways of doing loops - for loops and while loops
+
 ## Operators
 Outside of the usual operators, Python also uses:
 
