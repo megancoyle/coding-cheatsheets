@@ -11,7 +11,7 @@ Constructor method is defined with `def __init__`
 Decorators are special functions that return other functions and are used to modify the way that a function works - they're often used as accessor functions.
 
 ## Dictionaries
-A dictionary is a set of key value pairs. All keys in a dictionariy must be unique.
+A dictionary is a set of key value pairs. All keys in a dictionary must be unique.
 
 A dictionary can be created two different ways:
 
